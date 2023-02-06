@@ -4,10 +4,7 @@ import { StyleSheet, Text, View } from 'react-native';
 export default function App() {
   return (
     <View style={styles.container}>
-      <View>
-        <Text style={{ color: "#000" }}>Open up App.js to start working on your app!</Text>
-        <Button label="Choose a photo" />
-      </View>
+      <Text>Open up App.js to start working on your app!</Text>
       <StatusBar style="auto" />
     </View>
   );
