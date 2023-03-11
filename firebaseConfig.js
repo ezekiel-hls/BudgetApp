@@ -1,4 +1,4 @@
-import { initializeApp } from 'firebase/app';
+import { initializeApp } from "firebase/app";
 
 // Optionally import the services that you want to use
 import { getAuth } from "firebase/auth";
@@ -15,12 +15,10 @@ const firebaseConfig = {
     storageBucket: "budgetapp-c1bac.appspot.com",
     messagingSenderId: "336779764068",
     appId: "1:336779764068:web:79b380cde36cbba9d6da71",
-    measurementId: "G-HEKWEG3F5N"
-  };
+    measurementId: "G-HEKWEG3F5N",
+};
 
 const app = initializeApp(firebaseConfig);
-// For more information on how to access Firebase in your project,
-// see the Firebase documentation: https://firebase.google.com/docs/web/setup#access-firebase
 
 // Initialize Firebase Authentication and get a reference to the service
-const auth = getAuth(app);
+export const auth = getAuth(app);
